@@ -45,7 +45,7 @@ pipeline {
     post{
         always{
             archiveArtifacts(
-                artifacts: 'build/Testing/**/*.xml'
+                artifacts: 'build/Testing/**/*.xml',
                 fingerprint: true
             )
 
