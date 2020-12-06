@@ -31,7 +31,7 @@ pipeline {
         stage('Test')
         {
             steps{
-                sh 'cd build; ctest'
+                sh 'cd build; ctest -T test --no-compress'
             }
         }
         stage('Package')
