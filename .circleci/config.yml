@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   Build:
     Docker:
-      - image: dompolochak/p2ubuntu2004
+      - image: dompolochak/p2ubuntu2004:latest
         steps:
           - checkout
           - run: apt update
