@@ -55,6 +55,7 @@ install(TARGETS markturn_static LIBRARY)
 add_custom_target(run DEPENDS markturn COMMAND ./markturn)
 
 # setup testing
+include(CTest)
 enable_testing()
 
 # glob test files
